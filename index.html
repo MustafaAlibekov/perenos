@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>мой первый сайт без мозгов.</h1>
+    <p>сегодня я научусь отправлять данные на сервер и получать их.</p>
+    <form method="post">
+        <textarea name="message" rows="4" cols="50"
+placeholder="напиши, как ты себя чувствуешь. например : сегодня отличный день" required>{{test_user}}</textarea><br>
+        <button type="submit">анализировать. </button>
+    </form>
+    {% if recommendation %}
+    <div class="result">
+        <h3>рекомендация.</h3>
+        <p>{{recommendation}}</P>
+    </div>
+    {% endif %}
+</body>
+</html>
